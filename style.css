@@ -12,7 +12,7 @@ body {
 .header-wrapper {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#E0FFFF, #B0E0E6, #708090, #363636);
+    background: linear-gradient(#E0FFFF, #708090, #363636);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -25,11 +25,21 @@ body {
 h1{
     text-transform: uppercase;
     letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+h1:hover {
+    font-size: 50px;
+    color: #363636;
 }
 
 h2{
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+.number{
+    font-size: 24px;
 }
 
 .social-media {
@@ -223,7 +233,7 @@ a:hover {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0 0;
-    background-image: url('./img_background.jpg');
+    background-image: url('./img/img_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -307,6 +317,118 @@ a:hover {
     align-items: center;
 }
 
+/*SOBRE*/
+.img_perfil{
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+.img_perfil:hover {
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: 1.0;
+}
+.container_text{
+    width: 60%;
+    height: auto;
+}
+
+.text_sobre{
+    font: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/*PROJETO*/
+#h1_proj{
+    font-size: 58px;
+    transition: 0.3s;
+}
+#h1_proj:hover{
+    font-size: 60px;
+}
+
+
+.card_proj {
+    height: 300px;
+    width: 300px;
+    margin: 3rem 0 0 0;
+    background-image: url('./img/img_ramp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.card_proj:hover{
+    height: 400px;
+    width: 400px;
+    margin: 3rem 0 0 0;
+    background-image: url('./img/img_ramp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-text-proj {
+    width: 40%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 20px;
+}
+
+.card_proj1 {
+    height: 300px;
+    width: 300px;
+    margin: 3rem 0 0 0;
+    background-image: url('./img/orlando.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card_proj1:hover {
+    height: 400px;
+    width: 400px;
+    margin: 3rem 0 0 0;
+    background-image: url('./img/orlando.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 @media (max-width: 800px) {
     .social-media {
         display: flex;
@@ -341,4 +463,43 @@ a:hover {
         height: 190px;
         width: 190px;
     }
+}
+
+.back-end {
+    margin-top: 1rem;
+    text-decoration: none;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 1rem 4rem;
+    min-width: 4rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    transition: 0.5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+.back{
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;   
+}
+
+.back ul{
+    list-style-type: none;
+}
+
+.back:hover{
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    font-size: 45px;
 }
